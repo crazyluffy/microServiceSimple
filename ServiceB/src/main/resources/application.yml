@@ -1,0 +1,14 @@
+server:
+  port: 9101
+
+spring:
+  application:
+    name: serviceB
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eurekaServer1:7071/eureka/,http://eurekaServer2:7072/eureka,http://eurekaServer3:7073/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}:@project.version@
