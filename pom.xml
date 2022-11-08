@@ -10,7 +10,7 @@
     <modules>
         <module>eurekaServer</module>
         <module>serviceA</module>
-        <module>ServiceB</module>
+        <module>serviceB</module>
     </modules>
 
     <properties>
